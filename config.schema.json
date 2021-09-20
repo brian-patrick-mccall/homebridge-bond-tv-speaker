@@ -1,0 +1,70 @@
+{
+    "pluginAlias": "BondTvSpeaker",
+    "pluginType": "platform",
+    "singular": true,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "required": true
+            },
+            "bond": {
+                "title": "Bond IP address / host name",
+                "type": "string",
+                "required": true
+            },
+            "token": {
+                "title": "Bond token",
+                "type": "string",
+                "required": true
+            },
+            "freq": {
+                "title": "Frequency (38 for IR)",
+                "type": "integer",
+                "required": true
+            },
+            "modulation": {
+                "title": "Modulation (enter OOK if IR or unknown)",
+                "type": "string",
+                "required": true
+            },
+            "encoding": {
+                "title": "Encoding (most likely hex)",
+                "type": "string",
+                "required": true
+            },
+            "bps": {
+                "title": "Bits per second (between 100 and 40000)",
+                "type": "integer",
+                "required": true
+            },
+            "data_volume_up": {
+                "title": "TX Data for Volume Up",
+                "type": "string",
+		            "required": true
+            },
+            "data_volume_down": {
+                "title": "TX Data for Volume Down",
+                "type": "string",
+                "required": true
+            },
+            "volume_steps": {
+                "title": "Number of volumne steps",
+                "type": "integer",
+                "required": true
+            },
+            "mute_on": {
+                "title": "TX Data for Mute On",
+                "type": "string",
+                "required": true
+            },
+            "mute_off": {
+                "title": "TX Data for Mute Off",
+                "type": "string",
+                "required": false
+            }
+        }
+    }
+}
